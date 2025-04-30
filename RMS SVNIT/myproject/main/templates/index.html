@@ -1,0 +1,225 @@
+<!-- At the top of index.html -->
+{% load static %}
+
+<!-- Example: Link CSS/JS -->
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+<script src="{% static 'js/script.js' %}"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RMS SVNIT</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">RMS SVNIT</div>
+
+    <select class="location-select">
+      <option selected disabled>Select Location</option>
+      <option>Gajjar Bhavan</option>
+      <option>EWS</option>
+      <option>Swami Bhavan</option>
+      <option>Bhaba Bhavan</option>
+      <option>Taigor Bhavan</option>
+      <option>Neharu Bhavan</option>
+      <option>MTB</option>
+      <option>Staff Club</option>
+      <option>Gate 2</option>
+      <option>Old CRC</option>
+      <option>Admistation Building</option>
+      <option>AI Department</option>
+      <option>SAC Ground</option>
+    </select>
+
+    <input type="text" class="search-bar" placeholder="Search for products..." />
+
+    <a href="login.html" class="nav-btn">
+
+      <div class="nav-buttons">
+        <button class="nav-btn">LOGIN</button>
+      </div>
+    </a>
+  
+
+  <a href="cart.html" class="nav-btn">
+
+      <div class="nav-buttons">
+        <button class="nav-btn">🛒</button>
+      </div>
+  </a>
+  </header>
+
+  <!-- Advertisement Grid -->
+  <section class="ad-banner-grid">
+
+    <a href="pages/1dairy.html" class="ad-link">
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://www.shutterstock.com/image-photo/slice-whole-wheat-bread-breakfast-260nw-566605432.jpg');"></button>
+        <div class="ad-info">
+          <h3>Dairy, Bread </h3>
+          <p>Freshly baked and delivered!</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="pages/2cold_drink.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://www.shutterstock.com/image-photo/poznan-poland-oct-28-2021-260nw-2071581119.jpg');"></button>
+        <div class="ad-info">
+          <h3>Cold Drinks & Juices</h3>
+          <p>Chill with cool drinks!</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="pages/3snaks.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://cdn.grofers.com/da/cms-assets/cms/product/a462e780-3f6f-47df-a451-1e63791d175b.jpg?ts=1740848082');"></button>
+        <div class="ad-info">
+          <h3>Snacks & Munchies</h3>
+          <p>Craving something crunchy?</p>
+        </div>
+      </div>
+    </a>
+  
+    <a href="pages/4instant.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://5.imimg.com/data5/ANDROID/Default/2022/3/QC/FB/QF/124753872/product-jpeg-500x500.jpg');"></button>
+        <div class="ad-info">
+          <h3>Breakfast & Instant Food</h3>
+          <p>Start your day right!</p>
+        </div>
+      </div>
+    </a>
+      
+    <a href="pages/5sweet.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://www.giftacrossindia.com/media/catalog/product/g/a/gaicouchoc103.jpg');"></button>
+        <div class="ad-info">
+          <h3>Sweet Tooth</h3>
+          <p>Treat yourself to sweets!</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="pages/6bakery.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://hogr.app/blog/wp-content/uploads/2022/03/WhatsApp-Image-2022-03-23-at-4.20.08-PM-1020x680-1.jpeg');"></button>
+        <div class="ad-info">
+          <h3>Bakery & Biscuits</h3>
+          <p>Freshly baked everyday!</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="pages/7tea.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://media.istockphoto.com/id/1170898832/photo/warming-tea-with-honey-lemon-and-ginger.jpg?s=612x612&w=0&k=20&c=E91pFim80ZC9U_PEGiDfQLihmR_teLdFmTTctt3L3Ks=');"></button>
+        <div class="ad-info">
+          <h3>Tea, Coffee & Health Drink</h3>
+          <p>Time for a sip!</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="pages/8atta.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://res.cloudinary.com/di87xd291/image/upload/v1718600475/products/qvdys3eceu9jbtwovpbf.webp');"></button>
+        <div class="ad-info">
+          <h3>Atta, Rice & Dal</h3>
+          <p>Staples at best prices!</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="pages/9masla.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTMVRMd04JIqC2MZyl6jm-R-IRq83uTJetOQ&s');"></button>
+        <div class="ad-info">
+          <h3>Masala, Oil & More</h3>
+          <p>Spice up your kitchen!</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="pages/10souce.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://www.quickpantry.in/cdn/shop/collections/Spread_Sauce_Ketchup.png?crop=center&height=1200&v=1722450270&width=1200');"></button>
+        <div class="ad-info">
+          <h3>Sauces & Spreads</h3>
+          <p>Spread the flavor!</p>
+        </div>
+      </div>
+    </a>
+      
+    <a href="pages/11baby.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://maate.in/cdn/shop/files/Baby_Wipes_Home_Banner_Mobile.jpg?v=1726950376&width=3840');"></button>
+        <div class="ad-info">
+          <h3>Baby Care</h3>
+          <p>Only the best for your baby!</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="pages/12pharma.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://www.numeralifesciences.com/storage/blogs/zSftK8cKOBMkIj1sIRrGNCHe0QAArwtPbabxTy8E.jpeg');"></button>
+        <div class="ad-info">
+          <h3>Pharma & Wellness</h3>
+          <p>Stay fit and healthy!</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="pages/13cleaning.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://m.media-amazon.com/images/I/61012VrK1OL.jpg');"></button>
+        <div class="ad-info">
+          <h3>Cleaning Essentials</h3>
+          <p>Keep it clean and fresh!</p>
+        </div>
+      </div>
+    </a>
+      
+    <a href="pages/14personal.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://images.moneycontrol.com/static-mcnews/2021/11/iORA-Prebiotic-Skin-Care-Range-2-1-680x435.jpg?impolicy=website&width=770&height=431');"></button>
+        <div class="ad-info">
+          <h3>Personal Care</h3>
+          <p>Take care of yourself!</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="pages/15love.html" class="ad-link">
+
+      <div class="ad-item">
+        <button class="ad-card" style="background-image: url('https://m.media-amazon.com/images/I/710pTFpn9YL.jpg');"></button>
+        <div class="ad-info">
+          <h3>Love Bird's Corner</h3>
+          <p>Special treats for your loved ones!</p>
+        </div>
+      </div>
+    </a>  
+      
+  </section>
+
+</body>
+</html>
